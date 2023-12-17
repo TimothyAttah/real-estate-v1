@@ -1,10 +1,11 @@
 import React from 'react';
+import * as Styles from './HomeStyles';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Styles.HomeContainer>
+      <h1>Hello World!!!</h1>
+    </Styles.HomeContainer>
   );
 };
 

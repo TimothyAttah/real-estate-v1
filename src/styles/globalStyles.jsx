@@ -20,6 +20,8 @@ export const GlobalStyle = createGlobalStyle`
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     line-height: 1.7;
     color: ${({ theme }) => theme.colors.colorWhite};
+    background-color: ${({ theme }) => theme.colors.colorBackground};
+
 
   }
 
@@ -30,6 +32,26 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar{
       display: none;
     }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
   }
 
 
@@ -43,6 +65,13 @@ ul {
 
 a {
   text-decoration: none;
+  color: ${({ theme }) => theme.colors.colorWhite};
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 button {
@@ -52,6 +81,30 @@ button {
   :focus {
     outline: none;
   }
+}
+
+.btn {
+  display: inline-block;
+  background-color: ${({ theme }) => theme.colors.colorWhite};
+  color: ${({ theme }) => theme.colors.colorBlack};
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: ${({ theme }) => theme.transitions.transitionPrimary};
+
+
+  :hover {
+    background: transparent;
+  color: ${({ theme }) => theme.colors.colorWhite};
+  border-color: ${({ theme }) => theme.colors.colorWhite};
+  }
+
+
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 input {
