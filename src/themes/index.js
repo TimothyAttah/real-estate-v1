@@ -33,7 +33,7 @@ export const theme = {
   },
   screens: {
     smallSize: '550px',
-    mediumSize: '850px',
+    mediumSize: '980px',
     largeSize: '1180px',
     extraLargeSize: '1280px',
   },

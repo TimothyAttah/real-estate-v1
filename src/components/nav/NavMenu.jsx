@@ -41,13 +41,17 @@ export const NavMenu = () => {
   return (
     <Styles.NavMenuContainer>
       {navData.map((item, i) => (
-        <NavLink key={i} to={item.to}>
-          <li>
+        <li key={i}>
+          <NavLink
+            to={item.to}
+            className={({ isActive }) => (isActive ? 'active' : '')}
+          >
             <span>{item.icon}</span>
-            {item.name}
-          </li>
-        </NavLink>
+            <span>{item.name}</span>
+          </NavLink>
+        </li>
       ))}
+      <Styles.Indicator></Styles.Indicator>
     </Styles.NavMenuContainer>
   );
 };

@@ -21,7 +21,8 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.7;
     color: ${({ theme }) => theme.colors.colorWhite};
     background-color: ${({ theme }) => theme.colors.colorBackground};
-
+    border: 2px dashed wheat;
+    margin: 0 auto;
 
   }
 
@@ -98,8 +99,12 @@ button {
   color: ${({ theme }) => theme.colors.colorWhite};
   border-color: ${({ theme }) => theme.colors.colorWhite};
   }
+}
 
-
+.window-scroll {
+  background: ${({ theme }) => theme.colors.colorPrimary};
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+  transition: .5s;
 }
 
 .container {

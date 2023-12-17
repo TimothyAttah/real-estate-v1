@@ -7,6 +7,7 @@ import { NavMenu } from '../nav/NavMenu';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <Styles.MainHeaderContainer>

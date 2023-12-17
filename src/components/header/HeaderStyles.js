@@ -2,24 +2,28 @@ import styled from 'styled-components';
 
 export const MainHeaderContainer = styled.header`
   position: fixed;
-  width: 100vw;
+  /* max-width: 1500px; */
+  width: 100%;
   height: 5rem;
   left: 0;
   right: 0;
   top: 0;
-  z-index: 999px;
-  border: 2px solid red;
+  /* z-index: 999px; */
   /* background-color: ${({ theme }) => theme.colors.colorWhite}; */
   background: transparent;
+  /* margin: auto; */
+  /* padding: 0 100px; */
+  z-index: 99px;
 `;
 
 export const HeaderWrapper = styled.div`
   height: 100%;
-  width: 80%;
-  margin: 0 auto;
+  /* width: 80%; */
+  /* margin: 0 auto; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 50px;
 
   button {
     display: none;
