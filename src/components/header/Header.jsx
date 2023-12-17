@@ -6,7 +6,20 @@ import { AnimatePresence } from 'framer-motion';
 import { NavMenu } from '../nav/NavMenu';
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [burgerClass, setBurgerClass] = useState('burger-bar unclicked');
+  const [menuClass, setMenuClass] = useState(false);
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+
+  const updateMenu = () => {
+    if (!isMenuClicked) {
+      setBurgerClass('burger-bar clicked');
+      setMenuClass(true);
+    } else {
+      setBurgerClass('burger-bar unclicked');
+      setMenuClass(false);
+    }
+    setIsMenuClicked(!isMenuClicked);
+  };
 
   return (
     <>
@@ -19,17 +32,14 @@ export const Header = () => {
             Realtor
           </h1>
           <NavMenu />
-          <button>
-            <RiMenuLine />
-          </button>
-          <button>
-            <RiCloseLine />
-          </button>
+          <div className='burger-menu' onClick={updateMenu}>
+            <div className={burgerClass}></div>
+            <div className={burgerClass}></div>
+            <div className={burgerClass}></div>
+          </div>
         </Styles.HeaderWrapper>
       </Styles.MainHeaderContainer>
-      <AnimatePresence>
-        {isOpen && <SideBar setIsOpen={setIsOpen} />}
-      </AnimatePresence>
+      <AnimatePresence>{menuClass && <SideBar />}</AnimatePresence>
     </>
   );
 };

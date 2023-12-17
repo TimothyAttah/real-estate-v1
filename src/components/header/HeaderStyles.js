@@ -28,6 +28,47 @@ export const HeaderWrapper = styled.div`
   button {
     display: none;
   }
+
+  .burger-menu {
+    height: 30%;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    /* background-color: red; */
+
+    display: none;
+
+    @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
+      display: flex;
+    }
+  }
+
+  .burger-bar {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: rgb(0, 183, 255);
+    border-radius: 0.5rem;
+  }
+
+  .burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0rem, 1.15rem);
+    transition: ease-out 0.5s;
+  }
+  .burger-bar.clicked:nth-child(2) {
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+  }
+  .burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(0.2rem, 1rem);
+    transition: ease-out 0.5s;
+  }
+  .burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  }
 `;
 
 // export const HeaderNavLinks = styled.ul`

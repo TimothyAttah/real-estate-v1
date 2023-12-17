@@ -13,6 +13,7 @@ export const SideBar = styled(motion.div)`
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   box-shadow: 12px 12px 12px rgba(0, 0, 0, #000);
+  z-index: -1;
 `;
 
 export const SideBarNavLinks = styled.ul`

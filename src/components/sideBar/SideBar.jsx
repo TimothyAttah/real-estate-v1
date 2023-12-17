@@ -35,7 +35,7 @@ export const SideBar = ({ setIsOpen }) => {
       exit='hidden'
     >
       <Styles.CloseSideBarIcon>
-        <FaTimes onClick={() => setIsOpen(false)} />
+        {/* <FaTimes onClick={() => setIsOpen(false)} /> */}
       </Styles.CloseSideBarIcon>
       <Styles.SideBarNavLinks>
         <Link to='/' onClick={() => setIsOpen(false)}>
