@@ -1,6 +1,5 @@
 import React from 'react';
 import * as Styles from './SideBarStyles';
-import { FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const showAnimation = {
@@ -26,7 +25,7 @@ const showAnimation = {
   },
 };
 
-export const SideBar = ({ setIsOpen }) => {
+export const SideBar = ({ setMenuClass }) => {
   return (
     <Styles.SideBar
       variants={showAnimation}
@@ -34,17 +33,14 @@ export const SideBar = ({ setIsOpen }) => {
       animate='show'
       exit='hidden'
     >
-      <Styles.CloseSideBarIcon>
-        {/* <FaTimes onClick={() => setIsOpen(false)} /> */}
-      </Styles.CloseSideBarIcon>
       <Styles.SideBarNavLinks>
-        <Link to='/' onClick={() => setIsOpen(false)}>
+        <Link to='/' onClick={() => setMenuClass()}>
           Home
         </Link>
-        <Link to='/aircrafts-for-sale' onClick={() => setIsOpen(false)}>
+        <Link to='/aircrafts-for-sale' onClick={() => setMenuClass()}>
           Aircraft
         </Link>
-        <Link to='/' onClick={() => setIsOpen(false)}>
+        <Link to='/' onClick={() => setMenuClass()}>
           About
         </Link>
       </Styles.SideBarNavLinks>
