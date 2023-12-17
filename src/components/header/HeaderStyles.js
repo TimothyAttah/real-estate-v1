@@ -9,7 +9,6 @@ export const MainHeaderContainer = styled.header`
   top: 0;
   /* background: transparent; */
   background-color: ${({ theme }) => theme.colors.colorBackground};
-
   z-index: 99;
 `;
 
@@ -78,40 +77,4 @@ export const HeaderWrapper = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.screens.smallSize}) {
     padding: 0 10px;
   }
-
-  /* @media screen and (max-width: ${({ theme }) => theme.screens.smallSize}) {
-    padding: 0 10px;
-  } */
 `;
-
-// export const HeaderNavLinks = styled.ul`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   gap: 20px;
-//   transition: 0.2s ease all;
-
-//   a {
-//     font-size: 20px;
-//     color: ${({ theme }) => theme.colors.textColor};
-
-//     cursor: pointer;
-//     :hover {
-//       color: ${({ theme }) => theme.colors.mainColor};
-//     }
-//   }
-//   @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
-//     display: none;
-//   }
-// `;
-
-// export const HeaderBar = styled.div`
-//   display: none;
-//   @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
-//     display: flex;
-//     svg {
-//       font-size: 20px;
-//       cursor: pointer;
-//     }
-//   }
-// `;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as Styles from './HeaderStyles';
-import { RiBuilding2Line, RiCloseLine, RiMenuLine } from 'react-icons/ri';
+import { RiBuilding2Line } from 'react-icons/ri';
 import { SideBar } from '../sideBar/SideBar';
 import { AnimatePresence } from 'framer-motion';
 import { NavMenu } from '../nav/NavMenu';
