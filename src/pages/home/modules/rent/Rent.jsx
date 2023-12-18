@@ -1,6 +1,10 @@
 import React from 'react';
 import { Banner } from '../banner/Banner';
 import rentHouse from '../../../../assets/modern-residential-district-with-green-roof-balcony-generated-by-ai_188544-10276.jpg';
+import * as Styles from './RentStyles';
+import { Card } from '../../../../components/card/Card';
+
+import { rentingData } from '../homeData';
 
 export const Rent = () => {
   return (
@@ -15,6 +19,12 @@ export const Rent = () => {
         linkName='/search?purpose=for-rent'
         imgPix={rentHouse}
       />
+
+      <Styles.RentContainer>
+        {rentingData.map((item, i) => (
+          <Card data={item} />
+        ))}
+      </Styles.RentContainer>
     </div>
   );
 };

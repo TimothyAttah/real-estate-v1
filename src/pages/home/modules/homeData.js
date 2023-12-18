@@ -23,13 +23,13 @@ export const rentingData = [
     numOfRooms: 3,
     numOfBathRooms: 3,
     numOfToilet: 3,
-    address: 'Alpha Bay Estates. Alpha Beach Road. Lekki, Lekki, Lagos',
+    address: 'Alpha Bay Estates. Alpha Beach Road. Lekki, Lagos',
     details:
       'Luxury 3 bedroom flat for rent.!!! location: alpha bay estate, lekki. off alpha beach road. between 6 and 7th roundabout. 3 minutes from',
-    price: '₦2,500,000 per annum',
+    price: '₦2,500,000',
     phoneNum: '09072123456',
     email: 'Alafia & Co',
-    img: rentPix1,
+    imgUrl: rentPix1,
     subName: '3 bedroom flat / apartment for rent',
   },
   {
@@ -40,10 +40,10 @@ export const rentingData = [
     address: 'Ajah, Lagos',
     details:
       'For rent: brand new 4 bedroomterrace house with boys quarter at lekki palm city, ajah, lagos. features - brand new - all rooms en-suite -',
-    price: '₦3,200,000 per annum',
+    price: '₦3,200,000',
     phoneNum: '09072123456',
     email: 'Bluehedge Realtors',
-    img: rentPix2,
+    imgUrl: rentPix2,
     subName: '4 bedroom terraced duplex for rent',
     link: 'Content from Nigeria Property Centre Read more at: https://nigeriapropertycentre.com/for-rent,',
   },
@@ -55,10 +55,10 @@ export const rentingData = [
     address: ' Wuse2. Serene Neighborhood, Wuse 2, Abuja',
     details:
       '*rent: (@ wuse 2) n25m* fully detached bungalow (furnished) 5 bedroom fully detached bungalow with bq is available for rent in a',
-    price: '₦25,000,000 per annum',
+    price: '₦25,000,000',
     phoneNum: '09072123456',
     email: 'Ricosino Property Investment Ltd',
-    img: rentPix3,
+    imgUrl: rentPix3,
     subName: '5 bedroom detached bungalow for rent',
   },
   {
@@ -68,11 +68,11 @@ export const rentingData = [
     address:
       'Aloha Beach Road Chevron Lekki Lagos, Lekki Phase 2, Lekki, Lagos',
     details:
-      'A standard room self contain upstairs at alpha beach road chevron lekki lagos. rent 900k agency 100k legal 90k caution 90k service charge 80k per annum.',
-    price: '₦900,000 per annum',
+      'A standard room self contain upstairs at alpha beach road chevron lekki lagos. rent 900k agency 100k legal 90k caution 90k service charge 80k.',
+    price: '₦900,000',
     phoneNum: '09072123456',
     email: 'John B Mansions Estate Links Limited Lakeside Johnnymiles',
-    img: rentPix4,
+    imgUrl: rentPix4,
     subName: 'Self contain (single rooms) for rent',
   },
   {
@@ -82,10 +82,10 @@ export const rentingData = [
     address: ' Kay Farm Estate, Ogba, Ikeja, Lagos',
     details:
       'Luxury 3 bedroom apartment with excellence facilities at kay farm estate ogba rent: 1.5m pa agency 10%: 300k legal 10%: 150k caution:',
-    price: '₦1,500,000 per annum',
+    price: '₦1,500,000',
     phoneNum: '09072123456',
     email: 'Riyadh Realtors',
-    img: rentPix5,
+    imgUrl: rentPix5,
     subName: '3 bedroom flat / apartment for rent',
   },
   {
@@ -95,10 +95,10 @@ export const rentingData = [
     address: 'Kay Farm Estate, Ogba, Ikeja, Lagos',
     details:
       'Luxury 2 bedroom apartment with excellent facilities at kay farm estate ogba rent: 1.3m pa agency 10%: 260k legal 10%: 130k caution: 100k total: 1,790',
-    price: '₦1,300,000 per annum',
+    price: '₦1,300,000',
     phoneNum: '09072123456',
     email: 'Riyadh Realtors',
-    img: rentPix6,
+    imgUrl: rentPix6,
     subName: '2 Bedroom Flat / Apartment For Rent',
   },
   {
@@ -109,10 +109,10 @@ export const rentingData = [
     address: ' Opebi, Ikeja, Lagos',
     details:
       '24 units of 3 bedrooms luxury flats with a room bq attached each in an exclusive close opebi estate ikeja for corporate tenants only',
-    price: '₦5,500,000 per annum',
+    price: '₦5,500,000',
     phoneNum: '09072123456',
     email: 'Loyalty Homes Limited',
-    img: rentPix7,
+    imgUrl: rentPix7,
     subName: '3 Bedroom Flat / Apartment For Rent',
   },
   {
@@ -123,10 +123,10 @@ export const rentingData = [
     address: 'Ikeja GRA, Ikeja, Lagos',
     details:
       'Fresh ikeja gra letting *a tastefully finished newly built blocks of 7 units of flat comparison of 4nos of 3bedroom and 3nos of 2bedroom,',
-    price: '₦130,000,000 per annum',
+    price: '₦130,000,000',
     phoneNum: '09072123456',
     email: 'Loyalty Homes Limited',
-    img: rentPix8,
+    imgUrl: rentPix8,
     subName: '3 bedroom flat / apartment for rent',
   },
 ];
@@ -143,7 +143,7 @@ export const buyingData = [
     price: '₦65,000,000',
     phoneNum: '09072123456',
     email: 'Finn Grey Projects',
-    img: buyPix1,
+    imgUrl: buyPix1,
     subName: '2 bedroom terraced duplex for sale',
   },
   {
@@ -157,7 +157,7 @@ export const buyingData = [
     price: '₦400,000,000',
     phoneNum: '09072123456',
     email: 'Housing101',
-    img: buyPix2,
+    imgUrl: buyPix2,
     subName: '6 bedroom detached duplex for sale',
     link: 'Content from Nigeria Property Centre Read more at: https://nigeriapropertycentre.com/for-buy,',
   },
@@ -172,7 +172,7 @@ export const buyingData = [
     price: '₦120,000,000',
     phoneNum: '09072123456',
     email: 'Housing101',
-    img: buyPix3,
+    imgUrl: buyPix3,
     subName: '3 bedroom block of flats for sale',
   },
   {
@@ -186,7 +186,7 @@ export const buyingData = [
     price: '₦450,000,000',
     phoneNum: '09072123456',
     email: 'Bluehedge Realtors',
-    img: buyPix4,
+    imgUrl: buyPix4,
     subName: '5 bedroom detached duplex for sale',
   },
   {
@@ -200,7 +200,7 @@ export const buyingData = [
     price: '₦220,000,000',
     phoneNum: '09072123456',
     email: 'Bluehedge Realtors',
-    img: buyPix5,
+    imgUrl: buyPix5,
     subName: '5 bedroom detached duplex for sale',
   },
   {
@@ -214,7 +214,7 @@ export const buyingData = [
     price: '₦130,000,000',
     phoneNum: '09072123456',
     email: 'Bluehedge Realtors',
-    img: buyPix6,
+    imgUrl: buyPix6,
     subName: '4 bedroom detached duplex for sale',
   },
   {
@@ -228,7 +228,7 @@ export const buyingData = [
     price: '₦75,000,000',
     phoneNum: '09072123456',
     email: 'Bluehedge Realtors',
-    img: buyPix7,
+    imgUrl: buyPix7,
     subName: '3 Bedroom Terraced Duplex For Sale',
   },
   {
@@ -242,7 +242,7 @@ export const buyingData = [
     price: '₦55,000,000',
     phoneNum: '09072123456',
     email: 'Bluehedge Realtors',
-    img: buyPix8,
+    imgUrl: buyPix8,
     subName: '3 bedroom terraced duplex for sale',
   },
 ];
