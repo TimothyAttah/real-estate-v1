@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Listing } from '../listing/Listing';
 import { Overlay } from '../overlay/Overlay';
+import { Modal } from '../modal/Modal';
 
 export const Card = ({ data }) => {
   const [open, setOpen] = useState(false);
@@ -15,7 +16,11 @@ export const Card = ({ data }) => {
   return (
     <div>
       <Listing data={data} open={openModal} />
-      {open && <Overlay close={closeModal}></Overlay>}
+      {open && (
+        <Overlay close={closeModal}>
+          {<Modal data={data} close={closeModal} />}
+        </Overlay>
+      )}
     </div>
   );
 };

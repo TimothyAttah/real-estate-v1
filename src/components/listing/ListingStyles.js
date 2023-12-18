@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const ListingContainer = styled.div`
+export const ListingContainer = styled(motion.div)`
   width: 25%;
   min-width: 300px;
   max-width: 400px;

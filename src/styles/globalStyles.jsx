@@ -35,6 +35,16 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #cacaca;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
   }
@@ -70,9 +80,11 @@ a {
 }
 
 img {
-  width: 100%;
+  ${
+    '' /* width: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: cover; */
+  }
 }
 
 button {

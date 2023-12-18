@@ -14,7 +14,7 @@ export const Listing = ({ data, open }) => {
     numOfToilet,
   } = data;
   return (
-    <Styles.ListingContainer onClick={open}>
+    <Styles.ListingContainer onClick={open} whileHover={{ scale: 1.1 }}>
       <Styles.ListingContentWrapper>
         <Styles.ListingImageWrapper>
           <Styles.ListingImage src={imgUrl} alt='real estate mansion' />
