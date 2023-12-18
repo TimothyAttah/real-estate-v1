@@ -3,7 +3,7 @@ import * as Styles from './ListingStyles';
 import { Feature } from '../feature/Feature';
 import { FaBath, FaBed, FaToilet } from 'react-icons/fa';
 
-export const Listing = ({ data }) => {
+export const Listing = ({ data, open }) => {
   const {
     name,
     imgUrl,
@@ -14,7 +14,7 @@ export const Listing = ({ data }) => {
     numOfToilet,
   } = data;
   return (
-    <Styles.ListingContainer>
+    <Styles.ListingContainer onClick={open}>
       <Styles.ListingContentWrapper>
         <Styles.ListingImageWrapper>
           <Styles.ListingImage src={imgUrl} alt='real estate mansion' />
