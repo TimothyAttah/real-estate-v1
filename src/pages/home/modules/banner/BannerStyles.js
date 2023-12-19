@@ -57,5 +57,13 @@ export const BannerInfoWrapper = styled.div`
 
   @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
     text-align: center;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
   }
 `;
