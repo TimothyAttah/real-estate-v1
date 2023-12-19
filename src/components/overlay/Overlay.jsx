@@ -13,6 +13,7 @@ export const Overlay = ({ children, close }) => {
       initial={'closed'}
       exit={'closed'}
       animate={'open'}
+      key={'overlay'}
     >
       {children}
     </Styles.OverlayContainer>

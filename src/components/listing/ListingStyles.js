@@ -8,10 +8,13 @@ export const ListingContainer = styled(motion.div)`
   position: relative;
   margin: 20px;
   cursor: pointer;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background-color: #fff;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  /* background-color: #fff; */
+  background-color: ${({ theme }) => theme.colors.colorBackground2};
   border-radius: 10px;
   overflow: hidden;
+  transition: 'all 400ms ease';
 
   ::before {
     content: '';
@@ -26,13 +29,15 @@ export const ListingContentWrapper = styled.div`
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: ${({ theme }) => theme.colors.colorBackground2};
+
   border-radius: 10px;
   overflow: hidden;
 `;
 export const ListingImageWrapper = styled.div`
   width: 100%;
-  height: 65%;
+  height: 62%;
   overflow: hidden;
 `;
 export const ListingImage = styled.img`
@@ -68,12 +73,15 @@ export const ListingRow = styled.div`
 `;
 export const ListingPrice = styled.span`
   font-size: 1rem;
-  color: black;
+  /* color: black; */
+  color: #fafafa;
   font-weight: bold;
 `;
 export const ListingAddress = styled.span`
-  color: #737373;
+  /* color: #737373; */
+  color: #fafafa;
   font-size: 0.8rem;
+  padding-left: 5px;
 `;
 
 // export const ListingContentWrapper = styled.div``;

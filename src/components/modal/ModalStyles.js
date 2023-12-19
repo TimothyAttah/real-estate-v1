@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const ModalContainer = styled.div`
+export const ModalContainer = styled(motion.div)`
   min-height: 600px;
   border-radius: 20px;
   position: relative;
@@ -28,7 +29,7 @@ export const ModalContainer = styled.div`
     /* border: 2px solid red; */
   }
 `;
-export const ModalImage = styled.img`
+export const ModalImage = styled(motion.img)`
   object-fit: cover;
   border-radius: 20px;
 
@@ -42,7 +43,7 @@ export const ModalImage = styled.img`
     height: 100%;
   }
 `;
-export const ModalInfo = styled.div`
+export const ModalInfo = styled(motion.div)`
   background-color: #fff;
   color: black;
   display: flex;
@@ -63,21 +64,30 @@ export const ModalInfo = styled.div`
     align-items: flex-start;
   }
 `;
-export const ModalRow = styled.div`
+export const ModalRow = styled(motion.div)`
   margin: 20px 0px;
   display: flex;
   align-items: center;
   text-align: left;
 `;
-export const ModalPrice = styled.span`
+
+export const ModalTitle = styled(motion.h2)`
+  font-size: 2rem;
+  text-transform: capitalize;
+`;
+export const ModalPrice = styled(motion.span)`
   font-size: 3rem;
 `;
-export const ModalAddress = styled.span`
+export const ModalAddress = styled(motion.span)`
   font-size: 1.5rem;
   color: #737373;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 `;
 
-export const ModalDescriptionWrapper = styled.div`
+export const ModalDescriptionWrapper = styled(motion.div)`
   margin: 20px 0px;
   text-align: left;
   overflow-y: scroll;
@@ -85,13 +95,13 @@ export const ModalDescriptionWrapper = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
 `;
-export const ModalDescription = styled.p`
+export const ModalDescription = styled(motion.p)`
   color: #737373;
   margin: 0;
   padding: 0;
   font-size: 1.25rem;
 `;
-export const ModalCloseWrapper = styled.button`
+export const ModalCloseWrapper = styled(motion.button)`
   all: unset;
   position: absolute;
   cursor: pointer;

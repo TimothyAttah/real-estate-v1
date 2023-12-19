@@ -19,7 +19,7 @@ export const MainHero = () => {
                   autoStart: true,
                   loop: true,
                   delay: 40,
-                  strings: ['Rent', 'Buy', 'Sell'],
+                  strings: ['Sell', 'Rent', 'Lease'],
                 }}
               />
             </div>

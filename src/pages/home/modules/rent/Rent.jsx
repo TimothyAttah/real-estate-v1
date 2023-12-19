@@ -22,7 +22,7 @@ export const Rent = () => {
 
       <Styles.RentContainer>
         {rentingData.map((item, i) => (
-          <Card data={item} />
+          <Card data={item} key={i} />
         ))}
       </Styles.RentContainer>
     </div>
