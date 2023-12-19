@@ -20,11 +20,15 @@ export const Rent = () => {
         imgPix={rentHouse}
       />
 
-      <Styles.RentContainer>
-        {rentingData.map((item, i) => (
-          <Card data={item} key={i} />
-        ))}
-      </Styles.RentContainer>
+      <Styles.RentMainContainer>
+        <h2>Latest Listed Properties For Buying</h2>
+
+        <Styles.RentContainer>
+          {rentingData.map((item, i) => (
+            <Card data={item} key={i} />
+          ))}
+        </Styles.RentContainer>
+      </Styles.RentMainContainer>
     </div>
   );
 };

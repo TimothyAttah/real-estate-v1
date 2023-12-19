@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.7;
     color: ${({ theme }) => theme.colors.colorWhite};
     background-color: ${({ theme }) => theme.colors.colorBackground};
-    border: 2px dashed wheat;
+    ${'' /* border: 2px dashed wheat; */}
     margin: 0 auto;
 
   }

@@ -1,5 +1,25 @@
 import styled from 'styled-components';
 
+export const RentMainContainer = styled.div`
+  padding: 80px 0;
+
+  h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+`;
+
 export const RentContainer = styled.div`
   width: 100%;
   display: flex;

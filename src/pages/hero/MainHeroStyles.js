@@ -49,6 +49,7 @@ export const HeroInfoWrapper = styled.div`
   }
 
   @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
+    text-align: center;
     h1 {
       font-size: 35px;
     }

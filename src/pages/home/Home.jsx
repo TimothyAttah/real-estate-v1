@@ -2,7 +2,7 @@ import React from 'react';
 import * as Styles from './HomeStyles';
 import { MainHero } from '../hero/MainHero';
 import { Rent } from './modules/rent/Rent';
-import { Buy } from './modules/buy/Buy';
+import { Sell } from './modules/sell/Sell';
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       </Styles.HomeContainer>
       <div style={{ height: '100vh' }}>
         <Rent />
-        <Buy />
+        <Sell />
       </div>
     </div>
   );
