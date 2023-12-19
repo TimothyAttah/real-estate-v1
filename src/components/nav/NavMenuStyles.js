@@ -4,7 +4,7 @@ export const NavMenuContainer = styled.nav`
   position: relative;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 2.5rem;
   height: 70px;
 
   @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
@@ -21,17 +21,18 @@ export const NavMenuContainer = styled.nav`
     display: flex;
     align-items: center;
     position: relative;
-    width: 70px;
+    width: 100px;
     height: 70px;
     z-index: 1;
+    /* border: 2px solid red; */
 
     a.active {
       ::after {
         content: '';
         position: absolute;
         bottom: -20%;
-        left: -3%;
-        width: 110%;
+        left: 10%;
+        width: 80%;
         height: 5px;
         background: white;
         transition: 0.5s;
@@ -50,6 +51,7 @@ export const NavMenuContainer = styled.nav`
       transition: 0.5s;
       gap: 5px;
       font-size: 1.1rem;
+      font-weight: bold;
 
       svg {
         display: block;
