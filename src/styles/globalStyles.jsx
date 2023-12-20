@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.7;
     color: ${({ theme }) => theme.colors.colorWhite};
     background-color: ${({ theme }) => theme.colors.colorBackground};
-    border: 2px dashed wheat;
+    ${'' /* border: 2px dashed wheat; */}
     margin: 0 auto;
 
   }
@@ -33,6 +33,16 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar{
       display: none;
     }
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #cacaca;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -70,9 +80,11 @@ a {
 }
 
 img {
-  width: 100%;
+  ${
+    '' /* width: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: cover; */
+  }
 }
 
 button {
