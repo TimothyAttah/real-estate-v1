@@ -21,7 +21,7 @@ export const Sell = () => {
       />
 
       <Styles.BuyMainContainer>
-        <h2>Latest Listed Properties For Selling</h2>
+        <h2>Latest Listed Properties For Buying</h2>
 
         <Styles.BuyContainer>
           {buyingData.map((item, i) => (

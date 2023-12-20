@@ -21,7 +21,7 @@ export const Rent = () => {
       />
 
       <Styles.RentMainContainer>
-        <h2>Latest Listed Properties For Buying</h2>
+        <h2>Latest Listed Properties For Renting</h2>
 
         <Styles.RentContainer>
           {rentingData.map((item, i) => (
