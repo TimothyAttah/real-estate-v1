@@ -3,60 +3,78 @@ import styled from 'styled-components';
 export const MainHeaderContainer = styled.header`
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 5rem;
   left: 0;
   right: 0;
   top: 0;
+  /* background: transparent; */
+  background-color: ${({ theme }) => theme.colors.colorBackground};
+  z-index: 99;
+`;
+
+export const HeaderWrapper = styled.div`
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 999px;
-  /* margin-bottom: 50px; */
-  border: 2px solid red;
+  padding: 0 50px;
 
   h1 {
-    font-size: 40px;
-    color: ${({ theme }) => theme.colors.textColor};
-    span {
-      color: ${({ theme }) => theme.colors.mainColor};
+    display: flex;
+    align-items: center;
+
+    svg {
+      display: flex;
     }
   }
 
-  @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
-    h1 {
-      font-size: 32px;
-    }
-  }
-`;
-
-export const HeaderNavLinks = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  transition: 0.2s ease all;
-
-  a {
-    font-size: 20px;
-    color: ${({ theme }) => theme.colors.textColor};
-
-    cursor: pointer;
-    :hover {
-      color: ${({ theme }) => theme.colors.mainColor};
-    }
-  }
-  @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
+  button {
     display: none;
   }
-`;
 
-export const HeaderBar = styled.div`
-  display: none;
-  @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
+  .burger-menu {
+    height: 30%;
+    width: 4rem;
     display: flex;
-    svg {
-      font-size: 20px;
-      cursor: pointer;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+
+    @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
+      display: flex;
     }
+  }
+
+  .burger-bar {
+    width: 2rem;
+    height: 0.2rem;
+    /* background-color: rgb(0, 183, 255); */
+    background-color: ${({ theme }) => theme.colors.colorWhite};
+    border-radius: 0.5rem;
+  }
+
+  .burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0rem, 1.15rem);
+    transition: ease-out 0.5s;
+    background-color: red;
+  }
+  .burger-bar.clicked:nth-child(2) {
+    transform: scale(0);
+    transition: ease-out 0.5s;
+  }
+  .burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(0.2rem, 1rem);
+    transition: ease-out 0.5s;
+    background-color: red;
+  }
+  .burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.screens.smallSize}) {
+    padding: 0 10px;
   }
 `;

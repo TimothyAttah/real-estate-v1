@@ -7,12 +7,13 @@ export const SideBar = styled(motion.div)`
   top: 0;
   width: 300px;
   height: 100vh;
-  background: ${({ theme }) => theme.colors.bgLight};
+  background: ${({ theme }) => theme.colors.colorBackground2};
   color: ${({ theme }) => theme.colors.textColor};
   padding: 10px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   box-shadow: 12px 12px 12px rgba(0, 0, 0, #000);
+  /* z-index: -1; */
 `;
 
 export const SideBarNavLinks = styled.ul`

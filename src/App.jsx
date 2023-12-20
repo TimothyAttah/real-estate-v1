@@ -1,24 +1,28 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import React, { useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
 import Home from './pages/home/Home';
-import { theme } from './themes';
 import { Header } from './components/header/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => {
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      document
+        .querySelector('header')
+        .classList.toggle('window-scroll', window.scrollY > 0);
+    });
+  }, []);
+
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <BrowserRouter>
         <Header />
-        <div style={{ marginTop: '100px' }}>
-          <Routes>
-            <Route path='/' element={<Home />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
       </BrowserRouter>
       <ToastContainer />
-    </ThemeProvider>
+    </>
   );
 };
 
