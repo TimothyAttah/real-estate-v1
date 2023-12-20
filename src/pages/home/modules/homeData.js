@@ -1,4 +1,4 @@
-import rentPix from '../../../assets/modern-residential-district-with-green-roof-balcony-generated-by-ai_188544-10276.jpg';
+// import rentPix from '../../../assets/modern-residential-district-with-green-roof-balcony-generated-by-ai_188544-10276.jpg';
 import rentPix1 from '../../../assets/rent1.jpg';
 import rentPix2 from '../../../assets/rent2.jpg';
 import rentPix3 from '../../../assets/rent3.jpg';
@@ -7,7 +7,7 @@ import rentPix5 from '../../../assets/rent5.jpeg';
 import rentPix6 from '../../../assets/rent6.jpeg';
 import rentPix7 from '../../../assets/rent7.jpg';
 import rentPix8 from '../../../assets/rent8.jpeg';
-import buyPix from '../../../assets/buyPix.jpg';
+// import buyPix from '../../../assets/buyPix.jpg';
 import buyPix1 from '../../../assets/buy1.jpg';
 import buyPix2 from '../../../assets/buy2.jpg';
 import buyPix3 from '../../../assets/buy3.jpg';
