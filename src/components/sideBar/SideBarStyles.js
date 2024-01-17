@@ -28,11 +28,14 @@ export const SideBarNavLinks = styled.ul`
     cursor: pointer;
     padding: 10px 0;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
     transition: 0.3s ease-in-out all;
 
     :hover {
+      background-color: ${theme.color.textColor};
+      color: ${theme.color.textDark};
+      border-radius: 30px;
     }
   }
 `;

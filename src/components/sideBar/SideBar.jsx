@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Styles from './SideBarStyles';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const showAnimation = {
   hidden: {
@@ -25,6 +25,29 @@ const showAnimation = {
   },
 };
 
+const navData = [
+  {
+    name: 'Home',
+    // icon: <RiHome2Line />,
+    to: '/',
+  },
+  {
+    name: 'Find Your Suite',
+    // icon: <RiPriceTagFill />,
+    to: '/for-rent',
+  },
+  {
+    name: 'About',
+    // icon: <RiBookReadFill />,
+    to: '/about',
+  },
+  {
+    name: 'Contact',
+    // icon: <RiShieldUserFill />,
+    to: '/contact',
+  },
+];
+
 export const SideBar = ({ setMenuClass }) => {
   return (
     <Styles.SideBar
@@ -34,15 +57,17 @@ export const SideBar = ({ setMenuClass }) => {
       exit='hidden'
     >
       <Styles.SideBarNavLinks>
-        <Link to='/' onClick={() => setMenuClass()}>
-          Home
-        </Link>
-        <Link to='/aircrafts-for-sale' onClick={() => setMenuClass()}>
-          Aircraft
-        </Link>
-        <Link to='/' onClick={() => setMenuClass()}>
-          About
-        </Link>
+        {navData.map((item, i) => (
+          <li key={i}>
+            <NavLink
+              to={item.to}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={() => setMenuClass()}
+            >
+              <span>{item.name}</span>
+            </NavLink>
+          </li>
+        ))}
       </Styles.SideBarNavLinks>
     </Styles.SideBar>
   );

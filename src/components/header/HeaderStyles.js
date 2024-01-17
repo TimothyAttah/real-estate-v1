@@ -8,7 +8,6 @@ export const MainHeaderContainer = styled.header`
   left: 0;
   right: 0;
   top: 0;
-
   z-index: 99;
 `;
 
@@ -50,14 +49,14 @@ export const HeaderWrapper = styled.div`
   .burger-bar {
     width: 2rem;
     height: 0.2rem;
-    /* background-color: rgb(0, 183, 255); */
+    background-color: ${theme.color.bgLight};
     border-radius: 0.5rem;
   }
 
   .burger-bar.clicked:nth-child(1) {
     transform: rotate(45deg) translate(0rem, 1.15rem);
     transition: ease-out 0.5s;
-    background-color: red;
+    background-color: ${theme.color.bgLight};
   }
   .burger-bar.clicked:nth-child(2) {
     transform: scale(0);
@@ -66,7 +65,7 @@ export const HeaderWrapper = styled.div`
   .burger-bar.clicked:nth-child(3) {
     transform: rotate(135deg) translate(0.2rem, 1rem);
     transition: ease-out 0.5s;
-    background-color: red;
+    background-color: ${theme.color.bgLight};
   }
   .burger-bar.unclicked {
     transform: rotate(0) translate(0);
