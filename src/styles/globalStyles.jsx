@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { theme } from '../themes';
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -19,9 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     line-height: 1.7;
-    color: ${({ theme }) => theme.colors.colorWhite};
-    background-color: ${({ theme }) => theme.colors.colorBackground};
-    ${'' /* border: 2px dashed wheat; */}
+    background: ${theme.color.bodyBgColor};
     margin: 0 auto;
 
   }
@@ -35,7 +34,8 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  ::-webkit-scrollbar {
+  ${
+    '' /* ::-webkit-scrollbar {
     width: 5px;
     background-color: transparent;
   }
@@ -43,6 +43,7 @@ export const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: #cacaca;
+  } */
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -76,16 +77,10 @@ ul {
 
 a {
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.colorWhite};
+  color:${theme.color.textLight};
 }
 
-img {
-  ${
-    '' /* width: 100%;
-  display: block;
-  object-fit: cover; */
-  }
-}
+
 
 button {
   outline: none;
@@ -96,48 +91,18 @@ button {
   }
 }
 
-.btn {
-  display: inline-block;
-  background-color: ${({ theme }) => theme.colors.colorWhite};
-  color: ${({ theme }) => theme.colors.colorBlack};
-  padding: 1rem 2rem;
-  border: 1px solid transparent;
-  font-weight: 500;
-  transition: ${({ theme }) => theme.transitions.transitionPrimary};
-
-
-  :hover {
-    background: transparent;
-  color: ${({ theme }) => theme.colors.colorWhite};
-  border-color: ${({ theme }) => theme.colors.colorWhite};
-  }
-}
-
-.window-scroll {
-  background: ${({ theme }) => theme.colors.colorPrimary};
-  box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
-  transition: .5s;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 input {
    outline: none;
   border: none;
-  cursor: pointer;
   :focus {
     outline: none;
   }
 }
 
 img {
-  ${
-    '' /* width: 100%;
-  object-fit: cover; */
-  }
+  width: 100%;
+ object-fit: cover;
+ vertical-align: middle;
 
 }
 

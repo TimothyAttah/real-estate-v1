@@ -7,7 +7,7 @@ export const NavMenuContainer = styled.nav`
   gap: 2.5rem;
   height: 70px;
 
-  @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
+  @media screen and (max-width: ${({ theme }) => theme.screens.mediumScreen}) {
     display: none;
   }
 
@@ -21,7 +21,8 @@ export const NavMenuContainer = styled.nav`
     display: flex;
     align-items: center;
     position: relative;
-    width: 100px;
+    /* width: 100px; */
+    width: auto;
     height: 70px;
     z-index: 1;
     /* border: 2px solid red; */
@@ -107,10 +108,8 @@ export const NavMenuContainer = styled.nav`
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    transition: ${({ theme }) => theme.transitions.transitionPrimary};
 
     :hover {
-      color: ${({ theme }) => theme.colors.colorBackground2};
     }
 
     svg {

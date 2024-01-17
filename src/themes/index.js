@@ -1,45 +1,13 @@
-export const theme = {
-  colors: {
-    textDark: '#000',
-    textLight: ' #fff',
-    bgLight: '#fff',
-    bgDark: ' #000',
-    lightBlue: ' #fcb4cd',
-    gray: '#ccc',
-    lightGray: '#ddd',
-    darkGray: '#eee',
-    lightPrimary: '#fafafa',
-    bgColor: '#f8f9fa',
-    rgbColor: 'rgb(0, 0, 0, 0.125)',
-    lightDark: '#121212',
-    lightGreen: '#aaa2a2',
-    primary: 'rgba(255, 255, 255, 0.30)',
-    fontBlack: '#081323',
-    fontGray: '#828282',
-    overlay: 'rgba(0, 0, 0, 0.30)',
-    mainColor: '#d90429',
-    textColor: '#020102',
-    colorPrimary: '#6c63ff',
-    colorSuccess: '#00bf8e',
-    colorWarning: '#f7c94b',
-    colorDanger: '#f75842',
-    colorDangerVariant: 'rgba(247, 88, 66,0.4)',
-    colorWhite: '#fff',
-    colorLight: 'rgba(255,255,255, 0.7)',
-    colorBlack: '#000',
-    colorBackground: '#1f2641',
-    colorBackground1: '#2e3267',
-    colorBackground2: '#424890',
-  },
-  screens: {
-    smallSize: '550px',
-    mediumSize: '980px',
-    largeSize: '1180px',
-    extraLargeSize: '1280px',
-  },
+import { color } from './colors';
+import { fontSize } from './fontSize';
+import { transition } from './transition';
+import { screens } from './screen';
+import { shadow } from './shadow';
 
-  transitions: {
-    transitionPrimary: 'all 400ms ease',
-    mainTransition: '.5s all',
-  },
+export const theme = {
+  color,
+  fontSize,
+  transition,
+  screens,
+  shadow,
 };

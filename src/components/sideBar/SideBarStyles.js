@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-
+import { theme } from '../../themes';
 export const SideBar = styled(motion.div)`
   position: absolute;
   right: 0;
   top: 0;
   width: 300px;
   height: 100vh;
-  background: ${({ theme }) => theme.colors.colorBackground2};
-  color: ${({ theme }) => theme.colors.textColor};
+
   padding: 10px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -20,7 +19,6 @@ export const SideBarNavLinks = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: ${({ theme }) => theme.colors.textColor};
   margin-top: 80px;
 
   a {
@@ -32,12 +30,9 @@ export const SideBarNavLinks = styled.ul`
     border-radius: 5px;
     font-size: 24px;
     text-transform: uppercase;
-    color: ${({ theme }) => theme.colors.textColor};
     transition: 0.3s ease-in-out all;
 
     :hover {
-      background-color: ${({ theme }) => theme.colors.mainColor};
-      color: ${({ theme }) => theme.colors.textLight};
     }
   }
 `;

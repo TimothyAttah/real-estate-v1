@@ -39,9 +39,9 @@ export const Header = () => {
           </div>
         </Styles.HeaderWrapper>
       </Styles.MainHeaderContainer>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {menuClass && <SideBar setMenuClass={updateMenu} />}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </>
   );
 };

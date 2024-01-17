@@ -16,13 +16,8 @@ const navData = [
     to: '/',
   },
   {
-    name: 'For Sell',
+    name: 'Find Your Suite',
     // icon: <RiPriceTagFill />,
-    to: '/for-sell',
-  },
-  {
-    name: 'For Rent',
-    // icon: <RiSuitcase3Line />,
     to: '/for-rent',
   },
   {

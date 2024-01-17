@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../themes';
 
 export const MainHeaderContainer = styled.header`
   position: fixed;
@@ -7,8 +8,7 @@ export const MainHeaderContainer = styled.header`
   left: 0;
   right: 0;
   top: 0;
-  /* background: transparent; */
-  background-color: ${({ theme }) => theme.colors.colorBackground};
+
   z-index: 99;
 `;
 
@@ -42,7 +42,7 @@ export const HeaderWrapper = styled.div`
     cursor: pointer;
     display: none;
 
-    @media screen and (max-width: ${({ theme }) => theme.screens.mediumSize}) {
+    @media screen and (max-width: ${theme.screens.mediumScreen}) {
       display: flex;
     }
   }
@@ -51,7 +51,6 @@ export const HeaderWrapper = styled.div`
     width: 2rem;
     height: 0.2rem;
     /* background-color: rgb(0, 183, 255); */
-    background-color: ${({ theme }) => theme.colors.colorWhite};
     border-radius: 0.5rem;
   }
 
@@ -74,7 +73,7 @@ export const HeaderWrapper = styled.div`
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
   }
 
-  @media screen and (max-width: ${({ theme }) => theme.screens.smallSize}) {
+  @media screen and (max-width: ${({ theme }) => theme.screens.smallScreen}) {
     padding: 0 10px;
   }
 `;
