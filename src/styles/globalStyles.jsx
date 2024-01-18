@@ -1,13 +1,19 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
 import { theme } from '../themes';
 
 export const GlobalStyle = createGlobalStyle`
+:root {
+    --hue: 200;
+    --saturation: 70%;
+    --lightness: 55%;
+
+    --main-color: hsl(var(--hue), var(--saturation), var(--lightness));
+  }
   * {
 
      margin: 0;
     padding: 0;
     box-sizing: border-box;
-    ${'' /* scroll-padding-top:1rem; */}
     scroll-behavior: smooth;
     outline: 0;
     border:0;
@@ -15,9 +21,16 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
   body {
-    max-width: 1500px;
-    width: 100%;
+    ${
+      '' /* max-width: 1500px;
+    width: 100%; */
+    }
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     line-height: 1.7;
     background: ${theme.color.bodyBgColor};
@@ -113,4 +126,37 @@ img {
   width: 34vw;
   padding: 30px 20px;
 }
+`;
+
+export const Container = styled.div`
+  /* max-width: 1170px; */
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 15px;
+  /* border: 2px dashed blue; */
+
+  ${(props) =>
+    props.primary &&
+    css`
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    `}
+`;
+
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+
+  ${(props) =>
+    props.contact &&
+    css`
+      max-width: 1000px;
+      margin: auto;
+    `}
+
+  @media screen and (max-width: ${theme.screens.mediumScreen}) {
+    grid-template-columns: 1fr;
+  }
 `;

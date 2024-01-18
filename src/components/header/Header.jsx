@@ -4,6 +4,7 @@ import { RiBuilding2Line } from 'react-icons/ri';
 import { SideBar } from '../sideBar/SideBar';
 import { AnimatePresence } from 'framer-motion';
 import { NavMenu } from '../nav/NavMenu';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [burgerClass, setBurgerClass] = useState('burger-bar unclicked');
@@ -25,12 +26,12 @@ export const Header = () => {
     <>
       <Styles.MainHeaderContainer>
         <Styles.HeaderWrapper>
-          <h1>
-            <span>
+          <Link to='/'>
+            <h1>
               <RiBuilding2Line />
-            </span>
-            Realtor
-          </h1>
+              Realtor
+            </h1>
+          </Link>
           <NavMenu />
           <div className='burger-menu' onClick={updateMenu}>
             <div className={burgerClass}></div>
