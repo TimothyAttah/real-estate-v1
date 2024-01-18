@@ -4,6 +4,7 @@ import { FadeIn } from '../../components/fadeIn/FadeIn';
 import * as Styles from './HeroStyles';
 import { HeroSlider } from '../../components/slider/heroSlider/HeroSlider';
 import { Link } from 'react-router-dom';
+import { Button } from '../../components/button/Button';
 
 export const Hero = () => {
   return (
@@ -12,9 +13,9 @@ export const Hero = () => {
         <div>
           <h1>Realtor</h1>
           <p>Life is better here</p>
-          <button>
+          <Button>
             <Link to='/'>Find your suite</Link>
-          </button>
+          </Button>
         </div>
         <HeroSlider />
         <div></div>
