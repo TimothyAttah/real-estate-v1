@@ -5,6 +5,7 @@ import { SideBar } from '../sideBar/SideBar';
 import { AnimatePresence } from 'framer-motion';
 import { NavMenu } from '../nav/NavMenu';
 import { Link } from 'react-router-dom';
+import { FadeIn } from '../fadeIn/FadeIn';
 
 export const Header = () => {
   const [burgerClass, setBurgerClass] = useState('burger-bar unclicked');
@@ -23,7 +24,7 @@ export const Header = () => {
   };
 
   return (
-    <>
+    <FadeIn delay={0.2} direction='down'>
       <Styles.MainHeaderContainer>
         <Styles.HeaderWrapper>
           <Link to='/'>
@@ -43,6 +44,6 @@ export const Header = () => {
       <AnimatePresence>
         {menuClass && <SideBar setMenuClass={updateMenu} />}
       </AnimatePresence>
-    </>
+    </FadeIn>
   );
 };

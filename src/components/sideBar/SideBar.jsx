@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Styles from './SideBarStyles';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const showAnimation = {
   hidden: {

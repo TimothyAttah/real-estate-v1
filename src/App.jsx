@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Contact } from './pages/contact/Contact';
 import { Footer } from './components/footer/Footer';
 import { About } from './pages/about/About';
+import { Suites } from './pages/suites/Suites';
 
 const App = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About />} />
+          <Route path='/for-rent' element={<Suites />} />
         </Routes>
         <Footer />
       </BrowserRouter>

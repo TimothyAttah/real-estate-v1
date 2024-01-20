@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { theme } from '../../themes';
 
 export const AboutSection = styled.section`
-  padding: 60px 0;
+  padding: 150px 0;
 `;
 
 export const SectionTitle = styled.div`

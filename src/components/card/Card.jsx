@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Listing } from '../listing/Listing';
-import { Overlay } from '../overlay/Overlay';
-import { Modal } from '../modal/Modal';
-import { AnimatePresence } from 'framer-motion';
+// import { Overlay } from '../overlay/Overlay';
+// import { Modal } from '../modal/Modal';
+// import { AnimatePresence } from 'framer-motion';
 
 export const Card = ({ data }) => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
-  const openModal = () => {
-    setOpen(true);
-  };
+  // const openModal = () => {
+  //   setOpen(true);
+  // };
 
-  const closeModal = () => {
-    setOpen(false);
-  };
+  // const closeModal = () => {
+  //   setOpen(false);
+  // };
   return (
     <div>
       <Listing data={data} />
