@@ -17,6 +17,12 @@ export const FooterContainer = styled.footer`
     margin: 30px 0;
     color: ${theme.color.textColor};
     font-weight: bold;
+
+    a {
+      display: inline-block;
+      color: ${theme.color.textColor};
+      padding-left: 5px;
+    }
   }
 `;
 

@@ -78,7 +78,12 @@ export const Footer = () => {
           </ul>
         </div>
       </Styles.FooterWrapper>
-      <small>Copyright Realtor © 2024</small>
+      <small>
+        © 2024 Realtor. All rights reserved. Privacy Policy. Terms of Use.
+        <Link to='http://timothy-attah.netlify.app'>
+          A Timothy Attah Creation.
+        </Link>
+      </small>
     </Styles.FooterContainer>
   );
 };
