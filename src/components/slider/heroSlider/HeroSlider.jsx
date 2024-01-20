@@ -1,20 +1,50 @@
-import React from 'react';
+/* eslint-disable no-unused-expressions */
+import React, { useEffect } from 'react';
 import * as Styles from './HeroSliderStyles';
-import slideImg1 from '../../../assets/slider1.jpeg';
-import slideImg2 from '../../../assets/slider2.jpg';
-import slideImg3 from '../../../assets/slider3.jpg';
-import slideImg4 from '../../../assets/slider4.jpg';
+import slideImg1 from '../../../assets/01.jpg';
+import slideImg2 from '../../../assets/03.jpg';
+import slideImg3 from '../../../assets/04.jpg';
+import slideImg4 from '../../../assets/05.jpg';
 
 export const HeroSlider = () => {
-  let counter = 1;
-  setInterval(() => {
-    document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if (counter > 4) {
-      counter = 1;
-      // counter++;
-    }
-  }, 4000);
+  // setInterval(() => {
+  //   document.getElementById('radio' + counter).checked = true;
+  //   counter++;
+  //   if (counter > 4) {
+  //     counter = 1;
+  //     // counter++;
+  //   }
+  // }, 4000);
+
+  useEffect(() => {
+    // let counter = 1;
+    // let radio = (document.getElementById('radio' + counter).checked = true);
+    // if (radio !== null) {
+    //   setInterval(() => {
+    //     document.getElementById('radio' + counter).checked = true;
+    //     counter++;
+    //     if (counter > 4) {
+    //       counter = 1;
+    //     }
+    //   }, 4000);
+    // } else {
+    //   return null;
+    // }
+  }, []);
+  // window.addEventListener('load', () => {
+  //   let counter = 1;
+  //   setInterval(() => {
+  //     if ((document.getElementById('radio' + counter).checked = true)) {
+  //       counter++;
+  //     }
+
+  //     if (counter > 4) {
+  //       counter = 1;
+  //       // counter++;
+  //     }
+  //   }, 4000);
+  // });
+
   return (
     <Styles.SliderContainer>
       <Styles.Slides>

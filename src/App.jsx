@@ -3,6 +3,8 @@ import { ToastContainer } from 'react-toastify';
 import Home from './pages/home/Home';
 import { Header } from './components/header/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Contact } from './pages/contact/Contact';
+import { Footer } from './components/footer/Footer';
 
 const App = () => {
   useEffect(() => {
@@ -19,7 +21,9 @@ const App = () => {
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
       <ToastContainer />
     </>

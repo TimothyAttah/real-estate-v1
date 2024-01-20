@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { theme } from '../../themes';
 
 export const ButtonContainer = styled.button`
@@ -25,6 +25,8 @@ export const ButtonContainer = styled.button`
   :hover {
     color: #255784;
     background: #2196f3;
+    /* background: ${(props) =>
+      props.bgColor ? `${props.bgColor}` : `${theme.color.primaryColor}`}; */
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
     transition-delay: 1s;
   }
@@ -87,4 +89,57 @@ export const ButtonContainer = styled.button`
       transition-delay: 0.75s;
     }
   }
+
+  ${(props) =>
+    props.primary &&
+    css`
+      color: ${theme.color.textColor2};
+      :hover {
+        color: ${theme.color.textColor2Dark};
+        background: ${theme.color.textColor2};
+        box-shadow: 0 0 10px ${theme.color.textColor2},
+          0 0 40px ${theme.color.textColor2}, 0 0 80px ${theme.color.textColor2};
+        transition-delay: 1s;
+      }
+
+      span:nth-child(1) {
+        background: linear-gradient(
+          90deg,
+          transparent,
+          ${theme.color.textColor2}
+        );
+      }
+
+      span:nth-child(3) {
+        background: linear-gradient(
+          270deg,
+          transparent,
+          ${theme.color.textColor2}
+        );
+      }
+
+      span:nth-child(2) {
+        background: linear-gradient(
+          180deg,
+          transparent,
+          ${theme.color.textColor2}
+        );
+      }
+      span:nth-child(4) {
+        background: linear-gradient(
+          360deg,
+          transparent,
+          ${theme.color.textColor2}
+        );
+      }
+    `}
+
+  ${(props) =>
+    props.padding &&
+    css`
+      padding: 15px 0;
+      :hover {
+        padding: 15px 30px;
+      }
+    `}
 `;

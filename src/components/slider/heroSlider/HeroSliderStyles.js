@@ -2,9 +2,9 @@ import styled from 'styled-components';
 // import { theme } from '../../../themes';
 
 export const SliderContainer = styled.div`
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100%;
-  height: 600px;
+  height: 700px;
   border-radius: 10px;
   overflow: hidden;
   margin: auto;
@@ -37,7 +37,7 @@ export const SliderContainer = styled.div`
 `;
 export const Slides = styled.div`
   width: 500%;
-  height: 600px;
+  height: 700px;
   display: flex;
 
   input {
@@ -49,19 +49,18 @@ export const Slide = styled.div`
   transition: 2s;
 
   img {
-    max-width: 1200px;
+    max-width: 1500px;
     width: 100%;
-    /* width: 800px; */
-    height: 600px;
+    height: 700px;
   }
 `;
 export const NavigationAuto = styled.div`
   position: absolute;
   display: flex;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100%;
   justify-content: center;
-  margin-top: 560px;
+  margin-top: 660px;
 
   div {
     border: 2px solid #40d3dc;
@@ -77,7 +76,7 @@ export const NavigationAuto = styled.div`
 export const AutoBtn = styled.div``;
 export const NavigationManual = styled.div`
   position: absolute;
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100%;
   margin-top: -40px;
   display: flex;

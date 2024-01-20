@@ -9,6 +9,7 @@ export const MainHeaderContainer = styled.header`
   right: 0;
   top: 0;
   z-index: 99;
+  background: ${theme.color.bodyBgColor};
 `;
 
 export const HeaderWrapper = styled.div`

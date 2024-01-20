@@ -16,14 +16,14 @@ export const Card = ({ data }) => {
   };
   return (
     <div>
-      <Listing data={data} open={openModal} />
-      <AnimatePresence>
+      <Listing data={data} />
+      {/* <AnimatePresence>
         {open && (
           <Overlay close={closeModal}>
             {<Modal data={data} close={closeModal} />}
           </Overlay>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 };
