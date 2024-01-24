@@ -75,5 +75,9 @@ export const HeaderWrapper = styled.div`
 
   @media screen and (max-width: ${({ theme }) => theme.screens.smallScreen}) {
     padding: 0 10px;
+
+    h1 {
+      font-size: 20px;
+    }
   }
 `;
