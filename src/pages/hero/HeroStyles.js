@@ -41,6 +41,12 @@ export const HeroInfoWrapper = styled.div`
   justify-content: space-around;
   align-items: end;
   padding: 20px 0;
+
+  @media screen and (max-width: ${theme.screens.mediumScreen}) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const InfoBox = styled.div`
@@ -74,6 +80,15 @@ export const InfoBox = styled.div`
         padding-left: 30px;
       } */
     `}
+
+  @media screen and (max-width: ${theme.screens.mediumScreen}) {
+    margin: auto;
+    text-align: center;
+    h2 {
+      font-size: ${theme.fontSize.fs2xl};
+      margin: auto;
+    }
+  }
 `;
 
 export const InfoMessageBox = styled.div`
@@ -132,6 +147,19 @@ export const InfoMessageBox = styled.div`
 
     button {
       margin: 20px 0;
+    }
+  }
+
+  @media screen and (max-width: ${theme.screens.mediumScreen}) {
+    h2 {
+      text-align: center;
+      font-size: ${theme.fontSize.fs2xl};
+    }
+
+    p {
+      color: ${theme.color.textColor};
+      font-size: ${theme.fontSize.fsmd};
+      text-align: center;
     }
   }
 `;

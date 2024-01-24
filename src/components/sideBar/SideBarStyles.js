@@ -7,11 +7,12 @@ export const SideBar = styled(motion.div)`
   top: 0;
   width: 300px;
   height: 100vh;
-
   padding: 10px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   box-shadow: 12px 12px 12px rgba(0, 0, 0, #000);
+  background: ${theme.color.bodyBgColor};
+  z-index: 1;
   /* z-index: -1; */
 `;
 
