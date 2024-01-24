@@ -96,8 +96,8 @@ export const Hero = () => {
         </div>
         <Styles.CardWrapper>
           {rentingData.map((data, i) => (
-            <FadeIn delay={i * 0.2} direction='right'>
-              <Card key={i} data={data} />
+            <FadeIn key={i} delay={i * 0.2} direction='right'>
+              <Card data={data} />
             </FadeIn>
           ))}
         </Styles.CardWrapper>
